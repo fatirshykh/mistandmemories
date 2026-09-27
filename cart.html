@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Review your Mist & Memories shopping bag, enter your delivery address and order on WhatsApp."
+    />
+    <link rel="shortcut icon" href="/assets/logo/spray.png" type="image/x-icon">
+
+    <title>Shopping Bag & Checkout | Mist & Memories</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/products.js"></script>
+    <script defer src="js/cart.js"></script>
+  </head>
+  <body>
+    <div class="announcement">Mist & Memories · A fragrance to remember</div>
+    <nav class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="index.html"
+          >MIST & MEMORIES<span>THE FRAGRANCE EDIT</span></a
+        >
+        <div class="nav-links">
+          <a href="index.html#shop">Shop</a
+          ><a href="index.html#about">Our story</a
+          ><a href="index.html#faq">FAQ</a
+          ><a href="index.html#contact">Contact</a>
+        </div>
+        <a class="cart-toggle" href="cart.html"
+          >Shopping bag <span data-cart-count>0</span></a
+        >
+      </div>
+    </nav>
+    <main class="container section cart-page">
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> / Shopping bag
+      </div>
+      <div class="section-title left-title">
+        <p class="eyebrow">REVIEW YOUR SELECTION</p>
+        <h1 id="cartHeading">Your shopping bag</h1>
+        <p>
+          Review your fragrances and complete your delivery details before
+          ordering.
+        </p>
+      </div>
+      <div class="checkout-layout">
+        <div>
+          <div id="cartItems" class="cart-list"></div>
+          <a class="continue-link" href="index.html#shop"
+            >← Continue shopping</a
+          >
+          <form id="checkoutForm" class="checkout-form">
+            <div class="form-section-head">
+              <span>01</span>
+              <div>
+                <p class="eyebrow">YOUR DETAILS</p>
+                <h2>Delivery information</h2>
+                <p>
+                  These details will be included in your WhatsApp order. We do
+                  not receive them until you send the message.
+                </p>
+              </div>
+            </div>
+            <div class="form-grid">
+              <label
+                >Full name <span>*</span
+                ><input
+                  name="name"
+                  autocomplete="name"
+                  required
+                  maxlength="80"
+                  placeholder="Your full name" /></label
+              ><label
+                >Phone / WhatsApp <span>*</span
+                ><input
+                  name="phone"
+                  autocomplete="tel"
+                  type="tel"
+                  required
+                  maxlength="25"
+                  placeholder="03XX XXXXXXX"
+              /></label>
+            </div>
+            <label
+              >Street address / House number <span>*</span
+              ><input
+                name="address"
+                autocomplete="street-address"
+                required
+                maxlength="250"
+                placeholder="House, street, building and neighborhood"
+            /></label>
+            <div class="form-grid">
+              <label
+                >City <span>*</span
+                ><input
+                  name="city"
+                  autocomplete="address-level2"
+                  required
+                  maxlength="80"
+                  placeholder="City" /></label
+              ><label
+                >Area / District<input
+                  name="area"
+                  maxlength="100"
+                  placeholder="Area or district"
+              /></label>
+            </div>
+            <div class="form-grid">
+              <label
+                >Postal code (optional)<input
+                  name="postal"
+                  autocomplete="postal-code"
+                  maxlength="20"
+                  placeholder="Postal code" /></label
+              ><label
+                >Nearby landmark (optional)<input
+                  name="landmark"
+                  maxlength="120"
+                  placeholder="Nearby landmark"
+              /></label>
+            </div>
+            <label
+              >Delivery instructions (optional)<textarea
+                name="notes"
+                rows="3"
+                maxlength="350"
+                placeholder="Any useful instructions for delivery..."
+              ></textarea>
+            </label>
+            <p class="form-note">
+              We only use these details to prepare your WhatsApp message.
+              Delivery charges and payment method are confirmed by the seller.
+            </p>
+            <button
+              id="placeOrder"
+              class="btn btn-green order-button"
+              type="submit"
+            >
+              Place order on WhatsApp ↗
+            </button>
+          </form>
+        </div>
+        <aside class="summary-card">
+          <p class="eyebrow">YOUR ORDER</p>
+          <h2>Order summary</h2>
+          <div class="summary-row">
+            <span>Subtotal</span><strong id="cartSubtotal">Rs. 0</strong>
+          </div>
+          <div class="summary-row">
+            <span>Delivery</span><span>Confirmed on WhatsApp</span>
+          </div>
+          <div class="summary-row grand-total">
+            <strong>Subtotal</strong><strong id="cartTotal">Rs. 0</strong>
+          </div>
+          <p class="form-note">
+            No payment is collected on this website. Your order is submitted
+            only when you send the prepared WhatsApp message.
+          </p>
+          <a
+            class="summary-help"
+            href="https://wa.me/923006480048"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Need help? Chat with us ↗</a
+          >
+        </aside>
+      </div>
+    </main>
+    <footer class="footer premium-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <a class="brand" href="index.html"
+              >MIST & MEMORIES<span>THE FRAGRANCE EDIT</span></a
+            >
+            <p>
+              Every scent holds a memory. Discover a fragrance that feels
+              uniquely yours.
+            </p>
+            <a
+              class="footer-wa"
+              href="https://wa.me/923006480048"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Connect on WhatsApp ↗</a
+            >
+          </div>
+          <div class="footer-column">
+            <h3>Explore</h3>
+            <a href="index.html#shop">Shop all fragrances</a
+            ><a href="index.html#about">Our story</a
+            ><a href="index.html#faq">Frequently asked questions</a
+            ><a href="cart.html">Your shopping bag</a>
+          </div>
+          <div class="footer-column">
+            <h3>Customer care</h3>
+            <a href="index.html#contact">Contact us</a
+            ><a href="index.html#faq">Ordering & delivery</a
+            ><a href="index.html#faq">Payments & order changes</a>
+            <p>Policies and delivery terms will be confirmed before launch.</p>
+          </div>
+          <div class="footer-column">
+            <h3>Stay in touch</h3>
+            <p>Questions about a fragrance? Our team is one message away.</p>
+            <a
+              href="https://wa.me/923006480048"
+              target="_blank"
+              rel="noopener noreferrer"
+              >+92 300 6480048</a
+            >
+            <p>Follow our official social channels when available.</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Mist & Memories. All rights reserved.</span
+          ><span
+            >Designed By
+            <a href="https://fatirdevstudio.netlify.app"
+              >Fatir Dev Studio</a
+            ></span
+          ><span>Crafted with care</span>
+        </div>
+      </div>
+    </footer>
+    <a
+      class="float-wa"
+      href="https://wa.me/923006480048"
+      target="_blank"
+      rel="noopener noreferrer"
+      >WhatsApp ↗</a
+    >
+  </body>
+</html>
